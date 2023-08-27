@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Viajes</title>
+  <style>
+    /* Estilos CSS para la página */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Mis Destinos de Viaje Favoritos</h1>
+  
+  <h2>París, Francia</h2>
+  <a href="paris.html">
+    <img src="paris.jpg" alt="París">
+  </a>
+  
+  <h2>Video de Playa</h2>
+  <video controls autoplay>
+    <source src="beach.mp4" type="video/mp4">
+    Tu navegador no admite el elemento de video.
+  </video>
+  
+  <h2>Música Relajante</h2>
+  <audio controls loop>
+    <source src="relax.mp3" type="audio/mpeg">
+    Tu navegador no admite el elemento de audio.
+  </audio>
+  
+  <h2>Mapa de Destinos</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6565.730093548993!2d2.294481258619522!3d48.85884440536498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM4KwMDknMzMuMiJOIDDCsDQwJzIwLjEiRQ!5e0!3m2!1sen!2sus!4v1629999473332!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+ <h2>Gráfico Simple</h2>
+  <canvas id="graphCanvas" width="400" height="200"></canvas>
+  <script>
+    const canvas = document.getElementById('graphCanvas');
+    const context = canvas.getContext('2d');
+    
+    context.fillStyle = 'blue';
+    context.fillRect(50, 50, 100, 100);
+    
+    context.strokeStyle = 'red';
+    context.lineWidth = 5;
+    context.strokeRect(200, 50, 100, 100);
+  </script>
+
+  <h2>Elemento SVG</h2>
+  <svg width="200" height="100">
+    <circle cx="50" cy="50" r="40" fill="green" />
+    <rect x="120" y="30" width="50" height="50" fill="blue" />
+  </svg>
+  <img src="paris-158753.svg" alt="">
+
+</body>
+</html>
